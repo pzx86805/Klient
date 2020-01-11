@@ -24,11 +24,13 @@ namespace Klient
                 {
                     File.Delete(path);
                 }
-                
+
                 //TcpClient zgodnie z tym co podano w konsoli
+                Console.WriteLine("Próba połączenia z {0}:{1}", server, port);
                 TcpClient client = new TcpClient(this.server, this.port);
                 NetworkStream stream = client.GetStream();
-                if(stream != null) {
+                if(stream != null) 
+                {
                     using (FileStream fs = File.Create(path))
                     {
                         Console.WriteLine("Zapis pliku:{0}", path);
@@ -45,22 +47,46 @@ namespace Klient
             catch (ArgumentNullException e)
             {
                 Console.WriteLine("ArgumentNullException: {0}", e);
+                TryAgain();
+
             }
             catch (SocketException e)
             {
                 Console.WriteLine("SocketException: {0}", e);
+                TryAgain();
             }
             catch (FileNotFoundException e)
             {
                 Console.WriteLine("FileNotFoundException: {0}", e);
+                TryAgain();
             }
             catch (Exception e)
             {
                 Console.WriteLine("Exception: {0}", e);
+                TryAgain();
             }
-
-            Console.WriteLine("\n Press Enter to continue...");
             Console.Read();
+        }
+        public void TryAgain()
+        {
+            Console.WriteLine("###############\nSpróbować ponownie? tak[t/T], zmien dane serwera[z/Z], nie[cokolwiek innego]");
+            string ans =Console.ReadLine();
+            if (ans=="t" || ans=="T") {
+                
+                ConnectAndReceive();
+            }
+            else if (ans=="z" || ans=="Z")
+            {
+                Console.WriteLine("Podaj ip address serwera");
+                this.server = Console.ReadLine();
+                Console.WriteLine("Podaj port serwera");
+                this.port = Int32.Parse(Console.ReadLine());
+                ConnectAndReceive();
+            }
+            else
+            {
+                Console.WriteLine("Naciśnij cokolwiek by zamknąć okno");
+            }
         }
     }
 }
