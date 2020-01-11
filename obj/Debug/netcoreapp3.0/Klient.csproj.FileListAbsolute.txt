@@ -1,0 +1,11 @@
+C:\Users\Dawid\source\repos\ProjektKlient-Server\Klient\obj\Debug\netcoreapp3.0\Klient.csprojAssemblyReference.cache
+C:\Users\Dawid\source\repos\ProjektKlient-Server\Klient\obj\Debug\netcoreapp3.0\Klient.AssemblyInfoInputs.cache
+C:\Users\Dawid\source\repos\ProjektKlient-Server\Klient\obj\Debug\netcoreapp3.0\Klient.AssemblyInfo.cs
+C:\Users\Dawid\source\repos\ProjektKlient-Server\Klient\bin\Debug\netcoreapp3.0\Klient.exe
+C:\Users\Dawid\source\repos\ProjektKlient-Server\Klient\bin\Debug\netcoreapp3.0\Klient.deps.json
+C:\Users\Dawid\source\repos\ProjektKlient-Server\Klient\bin\Debug\netcoreapp3.0\Klient.runtimeconfig.json
+C:\Users\Dawid\source\repos\ProjektKlient-Server\Klient\bin\Debug\netcoreapp3.0\Klient.runtimeconfig.dev.json
+C:\Users\Dawid\source\repos\ProjektKlient-Server\Klient\bin\Debug\netcoreapp3.0\Klient.dll
+C:\Users\Dawid\source\repos\ProjektKlient-Server\Klient\bin\Debug\netcoreapp3.0\Klient.pdb
+C:\Users\Dawid\source\repos\ProjektKlient-Server\Klient\obj\Debug\netcoreapp3.0\Klient.dll
+C:\Users\Dawid\source\repos\ProjektKlient-Server\Klient\obj\Debug\netcoreapp3.0\Klient.pdb
