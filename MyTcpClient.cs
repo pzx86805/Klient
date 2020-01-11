@@ -24,8 +24,6 @@ namespace Klient
                 {
                     File.Delete(path);
                 }
-
-                //Create the file.
                 
                 //TcpClient zgodnie z tym co podano w konsoli
                 TcpClient client = new TcpClient(this.server, this.port);
@@ -55,6 +53,10 @@ namespace Klient
             catch (FileNotFoundException e)
             {
                 Console.WriteLine("FileNotFoundException: {0}", e);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception: {0}", e);
             }
 
             Console.WriteLine("\n Press Enter to continue...");
