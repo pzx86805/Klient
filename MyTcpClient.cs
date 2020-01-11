@@ -44,12 +44,6 @@ namespace Klient
                 stream.Close();
                 client.Close();
             }
-            catch (ArgumentNullException e)
-            {
-                Console.WriteLine("ArgumentNullException: {0}", e);
-                TryAgain();
-
-            }
             catch (SocketException e)
             {
                 Console.WriteLine("SocketException: {0}", e);
